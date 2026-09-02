@@ -1,0 +1,17 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Airflow
+infra/logs/
+infra/plugins/__pycache__/
+
+# Docker / local data
+infra/*.env
+.env
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
