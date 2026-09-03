@@ -8,7 +8,7 @@ BROKER_URL = "https://finnhub.io/api/v1/quote"
 SYMBOL = {"AAPL", "GOOGL", "MSFT", "AMZN", "TSLA"} 
 
 producer = KafkaProducer(
-    bootstrap_servers=["host.docker.internal:9092"],
+    bootstrap_servers=["localhost:29092"],
     value_serializer=lambda v: json.dumps(v).encode("utf-8"),
 )
 
